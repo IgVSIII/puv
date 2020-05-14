@@ -51,11 +51,11 @@ function Header( {user, setToken} ) {
 
   const onLogout = () => {
     setToken("");
-    history.push("/");
+    history.push("/puv/");
   }
 
   const onAuto = () => {
-    history.push("/");
+    history.push("/puv/");
   }
 
   let menuItem = null

@@ -36,7 +36,7 @@ export const likePhotoLib = (id, token) => {
     unsplash.photos.likePhoto(id)
         .then(res => res.json())
         .then(json => {
-            console.log(json);
+            //console.log(json);
         });
 };
 
@@ -45,6 +45,6 @@ export const unlikePhotoLib = (id, token) => {
     unsplash.photos.unlikePhoto(id)
         .then(res => res.json())
         .then(json => {
-            console.log(json);
+            //console.log(json);
         });
 };
