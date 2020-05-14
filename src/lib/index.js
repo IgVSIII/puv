@@ -4,7 +4,7 @@ import Unsplash from 'unsplash-js';
 const unsplash = new Unsplash({
     accessKey: "50ed87a710c800dc9bbe33a4a18ae37cb7d51679978da874ce6037c158b74af3",
     secret: "2728066a53a960c2899775cc7e9731282b5cf861111d88a595d0894e3c2024cb",
-    callbackUrl: "http://localhost:3000/"
+    callbackUrl: "https://igvsiii.github.io/puv/"
 });
 
 export const authenticationUrl = unsplash.auth.getAuthenticationUrl([
