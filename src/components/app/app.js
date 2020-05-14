@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Switch>
-        <Route exact path='/' component={Registration} />
+        <Route exact path='/puv/' component={Registration} />
         <Route path='/main' component={Main} />      
       </Switch>
     </div>
