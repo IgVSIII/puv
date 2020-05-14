@@ -34,7 +34,7 @@ function Registration({ user, setToken }) {
   useEffect(()=> {
     if (user) {
       //setAccessTokenUnplash(code, setToken);
-      history.push("/main");
+      history.push("/puv/main/");
     }
   },[user])
 
