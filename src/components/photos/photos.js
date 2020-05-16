@@ -6,6 +6,7 @@ import GridListTileBar from '@material-ui/core/GridListTileBar';
 import { connect } from 'react-redux';
 import { listPhoto, likePhotoLib, unlikePhotoLib } from '../../lib';
 import { setPhoto, setUnlike, setLike } from '../../redux/actions';
+import { Link } from 'react-router-dom';
 import { UPDATESIZE } from '../../redux/constants';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import StarsOutlinedIcon from '@material-ui/icons/StarsOutlined';
@@ -78,7 +79,9 @@ function Photos( {user, photos, size, setPhoto, setLike, setUnlike} ) {
       <GridList  className={classes.gridList} cols={3} >
         {photos.map((tile, index) => (
           <GridListTile key={tile.id+index} cols={1}>
-            <img src={tile.urls.small} alt={tile.alt_description} />
+            <Link to={"/puv/photo/" + index}>
+              <img src={tile.urls.small} alt={tile.alt_description} />
+            </Link>
             <GridListTileBar
               title={tile.likes}
               titlePosition="top"
