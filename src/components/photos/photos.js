@@ -49,7 +49,9 @@ function Photos( {user, photos, size, setPhoto, setLike, setUnlike} ) {
 
   window.addEventListener('scroll', () => {
     if ((document.documentElement.scrollHeight - 10 < 
-       document.documentElement.clientHeight + document.documentElement.scrollTop) && (stopUpdate === size) && (size !== 0) )  
+       document.documentElement.clientHeight + document.documentElement.scrollTop) 
+       && (stopUpdate === size) && (size !== 0) && (window.location.pathname === "/puv/main/")
+       )  
     {
       listPhoto(size + 1, size + UPDATESIZE ,user).then(result => setPhoto(result) )
       stopUpdate++;

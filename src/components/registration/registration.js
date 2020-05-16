@@ -38,6 +38,7 @@ function Registration({ user, setToken }) {
     }
   },[user])
 
+
   return (
     <div>
       <Container className="backImg">
